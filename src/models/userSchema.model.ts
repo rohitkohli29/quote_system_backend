@@ -15,7 +15,7 @@ const userSchema = new mongoose.Schema({
     },
     company_name: {
         type: String,
-        required: false,
+        default: null
     },
     city: {
         type: String,
@@ -31,7 +31,7 @@ const userSchema = new mongoose.Schema({
     },
     alternate_phone: {
         type: String,
-        required: false,
+        default: null
     },
     email: {
         type: String,

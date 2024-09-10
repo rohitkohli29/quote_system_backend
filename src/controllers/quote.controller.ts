@@ -5,10 +5,9 @@ import ServiceModel from "../models/service.model";
 
 // return the quote data according to user selected service
 export const getQuote = async (req: Request, res: Response) => {
-    const { selectedServices, user_info, questions_answer } = req.body;
+    const { selectedServices, questions_answer } = req.body;
 
     // we can also give the quote data according to the user answer. 
-    console.log(user_info);
     console.log(questions_answer);
 
     try {
