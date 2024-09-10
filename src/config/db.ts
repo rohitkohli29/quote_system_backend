@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 
+// A IIFE for connect database
 (async function () {
     try {
         const dbURI = process.env.DATABASE_URI;
